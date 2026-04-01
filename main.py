@@ -53,7 +53,7 @@ async def handle_audio_messages(message: Message):
     else:
         return
 
-    status_msg = await message.answer("Audioni yuklab olyapman va ishlayapman... ⏳")
+    status_msg = await message.reply("Audioni yuklab olyapman va ishlayapman... ⏳")
 
     original_path = f"temp_{file_id}.ext"
     wav_path = f"temp_{file_id}.wav"
